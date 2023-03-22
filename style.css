@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.main {
+  width: 320px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: linear-gradient(#826498,#638FBB);
+}
+.head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.month-year {
+  width: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+.month {
+  letter-spacing: 2px;
+}
+.year {
+  font-size: 16px;
+}
+.next-arrow span, .prev-arrow span{
+  font-size: 40px;
+  margin: 0px 20px;
+}
+.clender {
+  width: 100%;
+  margin-top: 20px;
+}
+.days, .number{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 2fr);
+  gap: 5px 0px;
+}
+.days span, .number span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.number span {
+  font-weight: 600;
+}
+.today {
+  background: #635BCF;
+  border-radius: 30px;
+  color: #fff;
+}
+.gray {
+  color: #A6AFB7;
+}
